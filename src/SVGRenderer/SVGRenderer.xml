@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="SVGRenderer.widget.SVGRenderer" needsEntityContext="true" xmlns="http://www.mendix.com/widget/1.0/">
+    <name>SVGRenderer</name>
+    <description>The description of this widget.</description>
+
+    <icon>iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABG2lUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iWE1QIENvcmUgNS41LjAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIi8+CiA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgo8P3hwYWNrZXQgZW5kPSJyIj8+Gkqr6gAAARtpQ0NQRGVsbCAyMjA5V0EAABiVY2Bg/JOTnFvMxMDAkJtXUhTk7qQQERmlwH6DgYOBH4iZGcwSk4sLfIPdQhjAYI0AAwb4do2BEURf1gWZhSmPF3AmFxSVAOkPQKxYXlIAZDOKANkiKanFyUC2BpDdUAR0FJC9AiSeDmHvAbGTIOwLIHZRSJAzkP0EyBZLR2InIbFLUitAdjE45xdUFmWmZ5QoGBkYWCi4pObkKHjmJeuB5ED+h/rrDtRfVhC3gAEPWLGRkYFluCPMDzwMLgypDDlAqMBgBIQGDJYM4QxwacoBwk15bAwMZlcYGJj3I8RSexgYtp1kYBCXQYgpOzEwCCUyMOwISC4tKoMawwp0qoL59vZP//8zMAAAkg1KiP2LkKgAAAAJcEhZcwAACxMAAAsTAQCanBgAAAEgSURBVDiN1ZK/SwJhHIefu/fQ886Q4hK0sqYiiJBoqSjo5x8QRJC4GLT4Xwi2uLQGzUKDqzQIDU0NtUmDi0g/CCRMs4OTssHOBsE7iYae5X2X5/N+vnxf+PdI3+fUzDDpsE5UVRD9hKpJ8/md80qDE8BSAO9ikPzpJrOGz/nFNnD1wHzqmslSjaQMRPemmXAj25XXxlBCOksAMhAwVHR3+g+qwGMH/IqeADmwgQjvAyANrSLGDzp3/wpKJO4coK0nGEmkAPAtxzCOjjuVF3YZTWZ6AiRg52yLi+1Id6WuOCxQLFSYk4Gncp3aIDJAs4Vpj1DMlbi7vMf6bDuLdQsyN7w8vpG1RwDwhDTiQY2YV/T/iY0W1fIrafOD20Fb/w1fZzg/1csj0hEAAAAASUVORK5CYII=</icon>
+
+    <properties>
+        <property key="initialEntityToUse" type="entity" allowNonPersistableEntities="true">
+            <caption>Entity to use</caption>
+            <category>Initial state</category>
+            <description>The entity to use to populate the SVG.</description>
+        </property>
+        <property key="initialSVGContent" type="attribute" entityProperty="initialEntityToUse">
+            <caption>SVG Content</caption>
+            <category>Initial state</category>
+            <description>The SVG to render.</description>
+             <attributeTypes>
+               <attributeType name="String" />
+             </attributeTypes>
+        </property>
+        <property key="initialStateNameToUse" type="attribute" entityProperty="initialEntityToUse">
+            <caption>State</caption>
+            <category>Initial state</category>
+            <description>The state name this SVG is associated with.</description>
+             <attributeTypes>
+               <attributeType name="String" />
+             </attributeTypes>
+        </property>
+        <property key="initialMicroflowToUse" type="microflow" required="false">
+            <caption>Microflow</caption>
+            <category>Initial state</category>
+            <description>The Microflow to populate the SVG.</description>
+            <returnType type="Object" entityProperty="initialEntityToUse"></returnType>
+        </property>
+    </properties>
+</widget>
+
