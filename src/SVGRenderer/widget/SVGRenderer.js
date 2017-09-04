@@ -34,13 +34,10 @@ define([
     "dojo/html",
     "dojo/_base/event",
 
-    "SVGRenderer/lib/jquery-1.11.2",
     "dojo/text!SVGRenderer/widget/template/SVGRenderer.html"
-], function (declare, _WidgetBase, _TemplatedMixin, dom, dojoDom, dojoProp, dojoGeometry, dojoClass, dojoStyle, dojoConstruct, dojoArray, lang, dojoText, dojoHtml, dojoEvent, _jQuery, widgetTemplate) {
+], function (declare, _WidgetBase, _TemplatedMixin, dom, dojoDom, dojoProp, dojoGeometry, dojoClass, dojoStyle, dojoConstruct, dojoArray, lang, dojoText, dojoHtml, dojoEvent, widgetTemplate) {
     "use strict";
-
-    var $ = _jQuery.noConflict(true);
-
+    
     // Declare widget's prototype.
     return declare("SVGRenderer.widget.SVGRenderer", [ _WidgetBase, _TemplatedMixin ], {
         // _TemplatedMixin will create our dom node using this HTML template.
